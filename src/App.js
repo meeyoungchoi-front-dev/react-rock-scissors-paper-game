@@ -5,15 +5,18 @@ import Box from "./components/Box";
 const choice = {
   rock: {
     name: "rock",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY24vXcxwnkJbGJi_nQWV6VNzVronsPHLtUk_dmCc_qHt-sJ9Qziuc82Yp2yOwVPNeOFM&usqp=CAU"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY24vXcxwnkJbGJi_nQWV6VNzVronsPHLtUk_dmCc_qHt-sJ9Qziuc82Yp2yOwVPNeOFM&usqp=CAU",
+    desc: "바위"
   },
   scissors: {
     name: "scissors",
-    img: "https://assets.katogroup.eu/i/katogroup/VT8-0919-24_02_victorinox"
+    img: "https://assets.katogroup.eu/i/katogroup/VT8-0919-24_02_victorinox",
+    desc: "가위"
   },
   paper:{
     name: "paper",
-    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVTP3dHJXp9MeXJzdSTg0A1jM6ljyaDvgEw&s"
+    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQVTP3dHJXp9MeXJzdSTg0A1jM6ljyaDvgEw&s",
+    desc: "보"
   }
 }
 
