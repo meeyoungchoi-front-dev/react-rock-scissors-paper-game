@@ -42,7 +42,7 @@ function App() {
     // 가위 : 보 , 바위 : 가위, 보 : 바위
     // 컴퓨터가 승리하는 조건
     // 보 : 가위, 가위 : 바위, 바위 : 보
-    if ((user.name === "scissors" && computer.name === "paper") || (user.name === "rock" && computer.name === "scissors") || (user.name === "paper" && computer.name == "rock") ) {
+    if ((user.name === "scissors" && computer.name === "paper") || (user.name === "rock" && computer.name === "scissors") || (user.name === "paper" && computer.name === "rock") ) {
         myWin = "win"
     } else if ((user.name === "rock" && computer.name === "scissors") || (user.name === "scissors" && computer.name === "rock") || (user.name === "rock" && computer.name === "paper") ) {
         myWin = "loose";
