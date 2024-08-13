@@ -30,10 +30,7 @@ export default class BoxClass extends Component {
         <h2 data-testid="item-name">
           {this.props.item && this.props.item.name}
         </h2>
-        <img
-          className="item-img"
-          src={this.props.item && this.props.item.img}
-        />
+        <img className="item-img" src={this.props.item && this.props.item.img} />
         <h2>{this.state.result}</h2>
       </div>
     );
