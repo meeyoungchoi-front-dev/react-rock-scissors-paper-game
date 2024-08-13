@@ -4,7 +4,12 @@ const Box = (props) => {
   let result = '';
   console.log("props: ", props);
   if ( props.title === "Computer" && props.result !== "draw" && props.result !== "" ) { 
-    result = props.result === "win" ? "lose" : "win";
+    // if (props.result === "win") {
+    //     result = "lose";
+    // } else if (props,result === "lose")  {
+    //     result = "win"
+    // }
+    result = props.result === "win" ? "loose" : "win";
   } else {
     result = props.result;
   }
