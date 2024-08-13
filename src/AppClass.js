@@ -20,7 +20,7 @@ export default class AppClass extends Component {
     return (
       <div>
         <div>state: {this.state.counter2}</div>
-        <button onClick={this.increase}>클릭!</button>
+        <button onClick={this.increase}>클릭하세요</button>
         <BoxClass num={this.state.value}/>
       </div>
     )
