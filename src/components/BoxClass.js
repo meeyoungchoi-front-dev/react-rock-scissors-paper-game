@@ -1,27 +1,31 @@
 import React, { Component } from "react";
 
 export default class BoxClass extends Component {
-  constructor() {
-    super();
-    this.result = "";
+  constructor(props) {
+    super(props);
+    this.state = {
+      result: "",
+    };
   }
-  getResult = () => {
+
+  static getDerivedStateFromProps(nextProps, prevState) {
     if (
-      this.props.title === "Computer" &&
-      this.props.result !== "tie" &&
-      this.props.result !== ""
+      nextProps.title === "Computer" &&
+      nextProps.result !== "tie" &&
+      nextProps.result !== ""
     ) {
-      // 카드가 computer카드인가? && 결과가 비긴건 아닌가? && this.props.result에 값이 있는가?
-      this.result = this.props.result === "win" ? "lose" : "win";
-    } else {
-      // 위의 경우가 아니라면 this.props&nbsp;로 전달된 결과를 그대로 쓴다.
-      this.result = this.props.result;
+      return {
+        result: nextProps.result === "win" ? "lose" : "win",
+      };
     }
-  };
+    return {
+      result: nextProps.result,
+    };
+  }
+
   render() {
-    this.getResult();
     return (
-      <div className={`box ${this.result}`}>
+      <div className={`box ${this.state.result}`}>
         <h1>{this.props.title}</h1>
         <h2 data-testid="item-name">
           {this.props.item && this.props.item.name}
@@ -30,7 +34,7 @@ export default class BoxClass extends Component {
           className="item-img"
           src={this.props.item && this.props.item.img}
         />
-        <h2>{this.result}</h2>
+        <h2>{this.state.result}</h2>
       </div>
     );
   }

@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
+import AppClass from "./App"; // 추가된 import 구문
 import reportWebVitals from "./reportWebVitals";
-import AppClass from "./AppClass";
+
 
 ReactDOM.render(
   <React.StrictMode>
