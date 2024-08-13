@@ -14,3 +14,16 @@
   display: flex;
   justify-content: center;
 }
+
+.win {
+  border: 1px solid green;
+}
+
+.lose {
+  border: 1px solid red;
+}
+
+.draw {
+  border: 1px solid yellow;
+}
+
