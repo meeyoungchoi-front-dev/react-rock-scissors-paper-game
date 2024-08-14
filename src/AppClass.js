@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import BoxClass from "./BoxClass";
+import BoxClass from "./components/BoxClass";
 
 const choice = {
   rock: {
