@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Box from "./components/Box";
 
@@ -25,6 +25,10 @@ function App() {
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState("");
 
+  useEffect(() => {
+    alert("가위바위보 게임을 시작합니다");
+  }, []);
+
   const play = (userChoice) => {
     console.log("userChoice: ", userChoice);
     setUserSelect(choice[userChoice]);
@@ -46,16 +50,9 @@ function App() {
         myWin = "win"
     } else if ((user.name === "rock" && computer.name === "scissors") || (user.name === "scissors" && computer.name === "rock") || (user.name === "rock" && computer.name === "paper") || (user.name === "paper" && computer.name === "scissors") ) {
         myWin = "loose";
-    } 
-    
-    
-    
-    else if (user.name === computer.name) {
+    } else if (user.name === computer.name) {
         myWin = "draw";
     }
-    
-    console.log("myWin: " , myWin);
-
     return myWin;
   }
 
