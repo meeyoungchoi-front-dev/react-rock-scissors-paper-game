@@ -44,9 +44,13 @@ function App() {
     // 보 : 가위, 가위 : 바위, 바위 : 보
     if ((user.name === "scissors" && computer.name === "paper") || (user.name === "rock" && computer.name === "scissors") || (user.name === "paper" && computer.name === "rock") ) {
         myWin = "win"
-    } else if ((user.name === "rock" && computer.name === "scissors") || (user.name === "scissors" && computer.name === "rock") || (user.name === "rock" && computer.name === "paper") ) {
+    } else if ((user.name === "rock" && computer.name === "scissors") || (user.name === "scissors" && computer.name === "rock") || (user.name === "rock" && computer.name === "paper") || (user.name === "paper" && computer.name === "scissors") ) {
         myWin = "loose";
-    } else if (user.name === computer.name) {
+    } 
+    
+    
+    
+    else if (user.name === computer.name) {
         myWin = "draw";
     }
     

@@ -34,6 +34,7 @@ export default class AppClass extends Component {
       computerSelect: computerChoice,
       result: this.judgement(choice[userChoice], computerChoice),
     });
+    console.log("userChoice: ", choice[userChoice]);
   };
   randomChoice = () => {
     let itemArray = Object.keys(choice); //객체에 키값만 뽑아서 어레이로 만들어주는 함수다
